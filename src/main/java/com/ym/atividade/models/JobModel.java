@@ -6,18 +6,14 @@ import lombok.Data;
 import java.util.List;
 import java.util.UUID;
 
+@Data
 @Entity
 @Table(name = "tbl_job")
-@Data
 public class JobModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID uuid;
     private String nome;
-
-
-    @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
-    private List<ProdutoModel> jobs;
 
 }

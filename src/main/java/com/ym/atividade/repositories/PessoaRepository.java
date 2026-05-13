@@ -1,9 +1,9 @@
 package com.ym.atividade.repositories;
 
-import com.ym.atividade.models.ProdutoModel;
+import com.ym.atividade.models.PessoaModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long>{
+public interface PessoaRepository extends JpaRepository<PessoaModel, Long>{
 }
