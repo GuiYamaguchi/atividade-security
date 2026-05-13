@@ -13,4 +13,7 @@ public class ProdutoModel {
     private Long id;
     private String nome;
 
+    @ManyToOne
+    @JoinColumn(name = "job_id")
+    private JobModel job;
 }
